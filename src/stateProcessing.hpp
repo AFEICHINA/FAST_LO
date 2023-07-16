@@ -32,6 +32,30 @@ double time_last_scan;
 V3D cov_acc_scale = V3D(0.1, 0.1, 0.1);
 V3D cov_gyr_scale = V3D(0.1, 0.1, 0.1);
 
+void set_gyr_cov(const V3D &scaler)
+{
+  cov_gyr_scale = scaler;
+}
+
+void set_acc_cov(const V3D &scaler)
+{
+  cov_acc_scale = scaler;
+}
+
+// void set_mean_acc_norm(const double &mean_acc_norm){
+//     IMU_mean_acc_norm = mean_acc_norm;
+// }
+
+// void set_gyr_bias_cov(const V3D &b_g)
+// {
+//   cov_bias_gyr = b_g;
+// }
+
+// void set_acc_bias_cov(const V3D &b_a)
+// {
+//   cov_bias_acc = b_a;
+// }
+
 void Forward_propagation_without_imu(const MeasureGroup &meas, StatesGroup &state_inout,
                              PointCloudXYZI &pcl_out) {
     pcl_out = *(meas.lidar);

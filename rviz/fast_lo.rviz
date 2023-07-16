@@ -6,7 +6,6 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
-        - /PointCloud22
       Splitter Ratio: 0.5
     Tree Height: 539
   - Class: rviz/Selection
@@ -172,7 +171,7 @@ Visualization Manager:
   Views:
     Current:
       Class: rviz/Orbit
-      Distance: 94.13716888427734
+      Distance: 39.96546173095703
       Enable Stereo Rendering:
         Stereo Eye Separation: 0.05999999865889549
         Stereo Focal Distance: 1
@@ -180,17 +179,17 @@ Visualization Manager:
         Value: false
       Field of View: 0.7853981852531433
       Focal Point:
-        X: 13.08972454071045
-        Y: -7.596405506134033
-        Z: -1.7672650814056396
+        X: 11.365655899047852
+        Y: 1.834693193435669
+        Z: -2.6512162685394287
       Focal Shape Fixed Size: true
       Focal Shape Size: 0.05000000074505806
       Invert Z Axis: false
       Name: Current View
       Near Clip Distance: 0.009999999776482582
-      Pitch: 1.0597964525222778
+      Pitch: 0.4097962975502014
       Target Frame: <Fixed Frame>
-      Yaw: 2.1653974056243896
+      Yaw: 3.2153964042663574
     Saved: ~
 Window Geometry:
   Displays:

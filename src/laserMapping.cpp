@@ -750,6 +750,11 @@ int main(int argc, char **argv) {
     cout << "lidar_type: " << lidar_type << endl;
     cout << "LiDAR-only odometry starts." << endl;
 
+    V3D cov_acc = V3D(acc_cov, acc_cov, acc_cov);
+    V3D cov_gyr = V3D(grav_cov, grav_cov, grav_cov);
+    set_acc_cov(cov_acc);
+    set_gyr_cov(cov_gyr);
+
     path.header.stamp = ros::Time().fromSec(lidar_end_time);
     path.header.frame_id = "camera_init";
 
